@@ -1,0 +1,11 @@
+set selection-clipboard clipboard
+
+set completion-fg green3
+set completion-bg black
+set inputbar-fg green3
+set inputbar-bg black
+set statusbar-fg green3
+
+set recolor-darkcolor green3
+set recolor-lightcolor black
+

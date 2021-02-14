@@ -1,0 +1,43 @@
+[user]
+	email = owner@sestolab.pp.ua
+	name = Sestowner
+	signingkey = 292950BF11B8666675B10EBACEEFFE74D5C35386
+
+[core]
+	editor = vim
+	pager = less -R -x4
+
+[commit]
+	gpgSign = true
+
+[tag]
+	gpgSign = true
+
+[pull]
+	ff = only
+
+[alias]
+	st = status -sb
+	l = log --oneline
+	ll = log --graph --abbrev-commit --decorate --oneline --all
+	lg = log --all --grep
+	lp = log -p
+	ls = ls-tree --name-only HEAD
+	tree = ls-tree --name-only -r HEAD
+	last = log -1 HEAD --stat
+	cm = commit -m
+	rv = remote -v
+	d = diff
+	dv = difftool -t vimdiff -y
+	ap = add -p
+	rp = restore -p
+	sp = stash -p
+	rc = rm --cached
+	unstage = restore --staged
+	uncommit = reset HEAD~
+
+[diff]
+	wsErrorHighlight = all
+
+[init]
+	defaultBranch = master

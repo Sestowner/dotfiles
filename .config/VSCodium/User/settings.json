@@ -1,0 +1,44 @@
+{
+	"files.autoSave": "off",
+	"editor.minimap.enabled": false,
+	"extensions.autoCheckUpdates": false,
+	"extensions.autoUpdate": false,
+	"update.mode": "none",
+	"update.showReleaseNotes": false,
+	"telemetry.enableCrashReporter": false,
+	"telemetry.enableTelemetry": false,
+	"editor.renderWhitespace": "all",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"window.menuBarVisibility": "toggle",
+	"workbench.editor.showTabs": false,
+	"workbench.colorTheme": "Monokai",
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.enableExperiments": false,
+	"workbench.settings.enableNaturalLanguageSearch": false,
+	"git.confirmSync": true,
+	"githubPullRequests.telemetry.enabled": false,
+	"githubPullRequests.queries": [
+		{
+			"label": "Waiting For My Review",
+			"query": "is:open review-requested:${user}"
+		},
+		{
+			"label": "Assigned To Me",
+			"query": "is:open assignee:${user}"
+		},
+		{
+			"label": "Created By Me",
+			"query": "is:open author:${user}"
+		}
+	],
+	"githubIssues.queries": [
+		{
+			"label": "My Issues",
+			"query": "default"
+		},
+		{
+			"label": "Created Issues",
+			"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+		}
+	]
+}

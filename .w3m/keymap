@@ -1,0 +1,19 @@
+keymap	C-b		EXTERN_LINK
+
+keymap	yy		EXTERN 'echo %s | xclip -sel c'
+keymap	yx		EXTERN_LINK 'echo %s | xclip -sel c'
+
+keymap	,M		EXTERN 'mpv --no-terminal %s &'
+keymap	,m		EXTERN_LINK 'mpv --no-terminal %s &'
+
+keymap	ti		DISPLAY_IMAGE
+keymap	tn		COMMAND "SET_OPTION show_lnum=toggle ; RESHAPE"
+keymap	tc		COMMAND "SET_OPTION color=toggle ; RESHAPE"
+
+keymap	f		MOVE_LIST_MENU
+keymap	d		CLOSE_TAB
+keymap	O		TAB_GOTO
+keymap	o		GOTO
+keymap	ESC-,	OPTIONS
+keymap	C-h		GOTO_HOME
+

@@ -1,0 +1,13 @@
+binding "pidgin-bindings" {
+	# enter inserts a newline
+	bind "Return" {
+		"insert-at-cursor" ("\n")
+	}
+	# Ctrl-Enter sends message
+	bind "<ctrl>Return" {
+		"message_send" ()
+	}
+}
+
+widget "*pidgin_conv_entry" binding "pidgin-bindings"
+

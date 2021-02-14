@@ -1,0 +1,5 @@
+! sxiv
+Sxiv.foreground: green3
+Sxiv.background: black
+Sxiv.font: monospace:size=10
+

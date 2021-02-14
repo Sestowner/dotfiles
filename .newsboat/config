@@ -1,0 +1,36 @@
+auto-reload yes
+reload-time 120
+reload-threads 20
+download-retries 4
+goto-next-feed no
+
+browser xdg-open
+html-renderer "w3m -dump -T text/html"
+
+bind-key j down feedlist
+bind-key k up feedlist
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key j down article
+bind-key k up article
+
+color background green black
+color listnormal green black
+color listfocus yellow default dim bold reverse
+color listnormal_unread green black bold
+color listfocus_unread yellow default dim bold reverse
+color info green black bold
+color article green black
+
+highlight all "---.*---" yellow default bold
+highlight feedlist ".*(0/0))" black
+highlight article "^(Feed|Title|Author|Link|Date):" blue default bold
+highlight article "https?://[^ ]+" green default bold
+
+macro m set browser "mpv --no-terminal %u &" ; open-in-browser ; set browser xdg-open
+macro w set browser "w3m -T text/html %u" ; open-in-browser ; set browser xdg-open
+
+# vim: ft=config
+
