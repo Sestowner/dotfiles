@@ -4,7 +4,7 @@ c.auto_save.session = True
 c.content.autoplay = False
 c.content.default_encoding = 'UTF-8'
 c.content.geolocation = False
-c.content.ssl_strict = True
+c.content.tls.certificate_errors = 'ask'
 c.content.webrtc_ip_handling_policy = 'disable-non-proxied-udp'
 c.content.headers.do_not_track = True
 c.content.blocking.enabled = True
@@ -15,7 +15,7 @@ c.tabs.show = 'multiple'
 c.tabs.background = True
 c.tabs.favicons.show = 'pinned'
 c.statusbar.show = 'in-mode'
-c.colors.webpage.prefers_color_scheme_dark = True
+c.colors.webpage.preferred_color_scheme = 'auto'
 c.window.hide_decoration = True
 
 config.bind('tb', 'config-cycle statusbar.show always in-mode')
