@@ -49,30 +49,6 @@ endif
 noremap <Leader>\t :botright vertical terminal<CR>
 noremap <Leader>tt :terminal<CR>
 
-" Go up an down wrapped lines
-map j gj
-map k gk
-
-" Splits navigation (C-hjkl)
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
-" Splits resizing (S-hjkl)
-noremap <S-h> :vertical resize -5<CR>
-noremap <S-l> :vertical resize +5<CR>
-noremap <S-j> :resize -5<CR>
-noremap <S-k> :resize +5<CR>
-
-" Toggle 2 split windows vert <-> horiz
-map <Leader>th <C-w>t<C-w>H
-map <Leader>tk <C-w>t<C-w>K
-
-" Copy/Paste to/from CLIPBOARD
-vnoremap <C-c> "+y
-vnoremap <C-x> "+x
-map <C-p> "+p
 
 " Colors
 hi CursorLineNr ctermfg=green ctermbg=none cterm=none
