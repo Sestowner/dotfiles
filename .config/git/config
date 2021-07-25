@@ -21,6 +21,7 @@
 	l = log --oneline
 	ll = log --graph --abbrev-commit --decorate --oneline --all
 	lg = log --all --grep
+	lig = log --all -i --grep
 	lp = log -p
 	ls = ls-tree --name-only HEAD
 	tree = ls-tree --name-only -r HEAD
@@ -28,12 +29,14 @@
 	cm = commit -m
 	rv = remote -v
 	d = diff
+	ds = diff --staged
 	dv = difftool -t vimdiff -y
 	ap = add -p
 	rp = restore -p
 	sp = stash -p
+	ssp = stash show -p
 	rc = rm --cached
-	unstage = restore --staged
+	rs = restore --staged
 	uncommit = reset HEAD~
 
 [diff]
