@@ -11,7 +11,6 @@ set matchpairs+=<:>
 set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 set wildmenu
-set splitbelow splitright
 set showmatch
 set hlsearch
 set smartcase
