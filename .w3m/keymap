@@ -7,7 +7,7 @@ keymap	,M		EXTERN 'mpv --no-terminal %s &'
 keymap	,m		EXTERN_LINK 'mpv --no-terminal %s &'
 
 keymap	ti		DISPLAY_IMAGE
-keymap	tn		COMMAND "SET_OPTION show_lnum=toggle ; RESHAPE"
+keymap	tn		COMMAND "SET_OPTION show_lnum=toggle ; SET_OPTION display_link_number=toggle ; RESHAPE"
 keymap	tc		COMMAND "SET_OPTION color=toggle ; RESHAPE"
 
 keymap	f		MOVE_LIST_MENU
