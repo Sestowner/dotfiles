@@ -17,6 +17,7 @@ c.tabs.favicons.show = 'pinned'
 c.statusbar.show = 'in-mode'
 c.colors.webpage.preferred_color_scheme = 'auto'
 c.window.hide_decoration = True
+c.hints.auto_follow = 'never'
 
 config.bind('tb', 'config-cycle statusbar.show always in-mode')
 config.bind('tt', 'config-cycle tabs.show always never')
