@@ -40,10 +40,27 @@ duckit() {
 }
 
 getcheatsh() {
-	curl "cheat.sh/$1"
+	curl "cheat.sh/$(echo $* | tr ' ' '+')"
 }
 
 cchmod() {
 	curl "cheat.sh/chmod/$1"
+}
+
+function v() {
+	vim $(echo "$@" | sed -e "s/:$//g" -e "s/:/ +/g")
+}
+
+mdw() {
+	md2html "$1" | w3m -T text/html
+}
+
+mds() {
+	md2html "$1" | surf "data:text/html;base64,$(base64 -w 0 <&0)"
+}
+
+function mvs() {
+	local TMPFILE=tmp.$$
+	mv "$1" $TMPFILE && mv "$2" "$1" && mv $TMPFILE "$2"
 }
 
