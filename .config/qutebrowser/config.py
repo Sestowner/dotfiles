@@ -27,6 +27,8 @@ config.bind('xs', 'config-source')
 
 config.bind(',M', 'spawn --detach mpv --force-window yes {url}')
 config.bind(',m', 'hint links spawn --detach mpv --force-window {hint-url}')
+config.bind(',am', 'hint all spawn --detach mpv --force-window {hint-url}')
+config.bind(',i', 'hint images spawn --detach display {hint-url}')
 config.bind(',v', 'hint links spawn --detach vlc {hint-url}')
 
 #password autofill
