@@ -1,4 +1,4 @@
-export PATH="$PATH:$HOME/.local/bin:$(find ~/.scripts -type d -printf %p:)"
+export PATH="$PATH:$HOME/.local/bin"
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
