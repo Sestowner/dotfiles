@@ -31,6 +31,7 @@ alias dos2unix='sed -i -e "s/\r//g"'
 alias rscp='rsync -ahP'
 alias rsmv='rsync -ahP --remove-source-files'
 alias rclone='RCLONE_CONFIG_PASS=$(pass rclone) rclone'
+alias yta='youtube-dl -f bestaudio -i --extract-audio --audio-format mp3 --audio-quality 0 -o "%(title)s.%(ext)s"'
 
 alias vfm=~/.config/vifm/scripts/vifmrun
 alias qr='qrencode -t UTF8'
