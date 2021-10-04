@@ -18,6 +18,9 @@ c.statusbar.show = 'in-mode'
 c.colors.webpage.preferred_color_scheme = 'auto'
 c.window.hide_decoration = True
 c.hints.auto_follow = 'never'
+c.url.default_page = 'https://sestolab.pp.ua/startpage'
+c.url.start_pages = c.url.default_page
+c.url.searchengines = {'DEFAULT': c.url.default_page + '?q={}'}
 
 config.bind('tb', 'config-cycle statusbar.show always in-mode')
 config.bind('tt', 'config-cycle tabs.show always never')
