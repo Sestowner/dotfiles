@@ -29,8 +29,8 @@ highlight feedlist ".*(0/0))" black
 highlight article "^(Feed|Title|Author|Link|Date):" blue default bold
 highlight article "https?://[^ ]+" green default bold
 
-macro m set browser "mpv --no-terminal %u &" ; open-in-browser ; set browser xdg-open
-macro w set browser "w3m -T text/html %u" ; open-in-browser ; set browser xdg-open
+macro m set browser "setsid -f mpv --no-terminal"; open-in-browser ; set browser xdg-open
+macro w set browser "w3m" ; open-in-browser ; set browser xdg-open
 
 # vim: ft=config
 
