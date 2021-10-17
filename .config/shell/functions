@@ -35,8 +35,8 @@ dbak() {
 	diff $1{.bak,}
 }
 
-duckit() {
-	w3m "https://duckduckgo.com/?q=$*"
+ws() {
+	w3m "https://sestolab.pp.ua/startpage?q=$*"
 }
 
 getcheatsh() {
