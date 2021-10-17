@@ -2,6 +2,7 @@ config.load_autoconfig()
 
 c.auto_save.session = True
 c.content.autoplay = False
+c.content.javascript.enabled = False
 c.content.default_encoding = 'UTF-8'
 c.content.geolocation = False
 c.content.tls.certificate_errors = 'ask'
@@ -25,6 +26,7 @@ c.url.searchengines = {'DEFAULT': c.url.default_page + '?q={}'}
 config.bind('tb', 'config-cycle statusbar.show always in-mode')
 config.bind('tt', 'config-cycle tabs.show always never')
 config.bind('tdm', 'config-cycle colors.webpage.darkmode.enabled;; config-cycle content.user_stylesheets "css/darkmode-fix.css" "";; restart')
+config.bind('tj', 'config-cycle -tpu {url:host} content.javascript.enabled;; reload')
 
 config.bind('xs', 'config-source')
 
