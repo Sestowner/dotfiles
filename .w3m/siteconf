@@ -1,0 +1,15 @@
+url m!^https?://([a-z]+\.)?search\.brave\.com/!
+user_agent "Mozilla/5.0 (Android 13.9.4; Mobile; rv:97.4.3; x86_64) Gecko/97.4.3 Firefox/97.4.3"
+
+url m!^https?://([a-z]+\.)?youtube\.com/!
+substitute_url "https://yewtu.be/"
+
+url m!^https?://([a-z]+\.)?reddit\.com/!
+substitute_url "https://teddit.net/"
+
+url m!^https?://([a-z]+\.)?instagram\.com/!
+substitute_url "https://bibliogram.art/"
+
+url m!^https?://([a-z]+\.)?twitter\.com/!
+substitute_url "https://nitter.eu/"
+
