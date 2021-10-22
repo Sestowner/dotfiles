@@ -23,6 +23,15 @@ c.url.default_page = 'https://sestolab.pp.ua/startpage'
 c.url.start_pages = c.url.default_page
 c.url.searchengines = {'DEFAULT': c.url.default_page + '?q={}'}
 
+config.bind('o', 'spawn --userscript qbdmenu')
+config.bind('O', 'spawn --userscript qbdmenu -t')
+config.bind('go', 'spawn --userscript qbdmenu {url:pretty}')
+config.bind('gO', 'spawn --userscript qbdmenu -t -r {url:pretty}')
+config.bind('wo', 'spawn --userscript qbdmenu -w')
+config.bind('wO', 'spawn --userscript qbdmenu -w {url:pretty}')
+config.bind(';o', 'hint links spawn --userscript qbdmenu {hint-url}')
+config.bind(';O', 'hint links spawn --userscript qbdmenu -t -r {hint-url}')
+
 config.bind('tb', 'config-cycle statusbar.show always in-mode')
 config.bind('tt', 'config-cycle tabs.show always never')
 config.bind('tdm', 'config-cycle colors.webpage.darkmode.enabled;; config-cycle content.user_stylesheets "css/darkmode-fix.css" "";; restart')
