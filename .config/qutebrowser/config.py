@@ -37,8 +37,8 @@ config.bind(',i', 'hint images spawn --detach display "{hint-url}"')
 config.bind(',v', 'hint links spawn --detach vlc "{hint-url}"')
 
 #password autofill
-config.bind('<z><l>', 'spawn --userscript qute-pass -d dmenu')
-config.bind('<z><u><l>', 'spawn --userscript qute-pass -d dmenu --username-only')
-config.bind('<z><p><l>', 'spawn --userscript qute-pass -d dmenu --password-only')
-config.bind('<z><o><l>', 'spawn --userscript qute-pass -d dmenu --otp-only')
+config.bind('<z><l>', 'spawn --userscript qbpass')
+config.bind('<z><u><l>', 'spawn --userscript qbpass u')
+config.bind('<z><p><l>', 'spawn --userscript qbpass p')
+config.bind('<z><o><l>', 'spawn --userscript qbpass o')
 
