@@ -55,26 +55,7 @@ macro index,pager gs <change-folder>=Sent<enter> 'Go to Sent'
 macro index,pager gt <change-folder>=Trash<enter> 'Go to Trash'
 
 # Colors
-color hdrdefault blue black
-color quoted blue black
-color signature blue black
-color attachment red black
-color prompt brightmagenta black
-color message brightred black
-color error brightred black
-color indicator black yellow
-color status brightgreen black
-color tree green black
-color normal green black
-color markers red black
-color search black yellow
-color tilde brightblack black
-color index blue black ~F
-color index red black "~N|~O"
-color sidebar_highlight black yellow
-color sidebar_spoolfile yellow black
-color sidebar_indicator black magenta
-color sidebar_divider green black
+source ~/.config/mutt/mutt-colors-solarized-dark-16.muttrc
 
 source ~/.config/mutt/accounts/owner.sestolab.pp.ua # Default account
 

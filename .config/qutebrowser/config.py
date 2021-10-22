@@ -51,3 +51,5 @@ config.bind('<z><u><l>', 'spawn --userscript qbpass u')
 config.bind('<z><p><l>', 'spawn --userscript qbpass p')
 config.bind('<z><o><l>', 'spawn --userscript qbpass o')
 
+config.source('solarizedark.py')
+
