@@ -1,0 +1,21 @@
+let homedirectory = '/home/sestowner'
+let configpath = '~/.cvimrc'
+set localconfig
+
+let searchengine ss = 'https://sestolab.pp.ua/startpage?q='
+let defaultengine = 'ss'
+
+set noautofocus
+
+unmap t
+unmap x
+
+map O :tabnew<space>
+map o :open<space>
+map R reloadTabUncached
+map u lastClosedTab
+map d closeTab
+map go :open @%
+map gO :tabnew @%
+map xs :source<CR>
+
