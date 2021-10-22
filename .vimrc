@@ -53,12 +53,14 @@ noremap <Leader>cb :set invcursorbind<CR>
 
 " Colors
 hi CursorLineNr ctermfg=green ctermbg=none cterm=none
-hi CursorLine ctermfg=none ctermbg=none cterm=none
+hi CursorLine ctermfg=none ctermbg=black cterm=none
 hi VertSplit ctermfg=green ctermbg=none cterm=none
 hi Pmenu ctermbg=darkgray
 hi PmenuSel ctermbg=darkgreen
 hi SpecialKey ctermfg=darkgray
 hi NonText ctermfg=darkgray
+hi Search ctermfg=black
+hi Todo ctermfg=darkyellow ctermbg=none cterm=bold
 
 " Automatic commands
 au BufReadPost * call setpos(".", getpos("'\"")) " Remember cursor position
