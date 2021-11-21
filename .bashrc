@@ -26,5 +26,7 @@ if [ -z "$BASH_COMPLETION_VERSINFO" ]; then
 	fi
 fi
 
+[ -n "$BASH_COMPLETION_VERSINFO" ] && complete -F _root_command doas
+
 PS1="\[\033[31;1m\]\u\[\033[01;33m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 
