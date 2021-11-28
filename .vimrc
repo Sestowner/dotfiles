@@ -45,7 +45,7 @@ if ! isdirectory(expand(&g:undodir))
 endif
 
 " Mapping
-noremap <Leader>\t :botright vertical terminal<CR>
+noremap <Leader>\t :vertical rightbelow terminal<CR>
 noremap <Leader>tt :terminal<CR>
 noremap <Leader>ta :tab terminal<CR>
 noremap <Leader>cb :set invcursorbind<CR>
