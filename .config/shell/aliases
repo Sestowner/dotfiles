@@ -36,7 +36,7 @@ alias yta='youtube-dl -f bestaudio -i --extract-audio --audio-format mp3 --audio
 alias vfm=~/.config/vifm/scripts/vifmrun
 alias qr='qrencode -t UTF8'
 
-alias curlc='curl -LOC- "$(getclip c)"'
+alias wgetc='wget -c "$(getclip c)"'
 alias mpvc='mpv $(getclip c)'
 
 alias vnc='x11vnc -forever -nopw -noxfixes -noxdamage -noxrecord -usepw'

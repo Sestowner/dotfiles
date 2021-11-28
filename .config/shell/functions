@@ -40,11 +40,11 @@ ws() {
 }
 
 getcheatsh() {
-	curl "cheat.sh/$(echo $* | tr ' ' '+')"
+	wget -qO- "cheat.sh/$(echo $* | tr ' ' '+')"
 }
 
 cchmod() {
-	curl "cheat.sh/chmod/$1"
+	wget -qO- "cheat.sh/chmod/$1"
 }
 
 function v() {
