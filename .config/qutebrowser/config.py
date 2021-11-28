@@ -1,6 +1,5 @@
 config.load_autoconfig()
 
-c.auto_save.session = True
 c.content.autoplay = False
 c.content.javascript.enabled = False
 c.content.default_encoding = 'UTF-8'
