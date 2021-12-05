@@ -25,6 +25,7 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set scrolloff=4
+set modeline
 syntax on
 
 " Move temporary files to a secure location to protect against CVE-2017-1000382
