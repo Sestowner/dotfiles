@@ -21,6 +21,10 @@ c.hints.auto_follow = 'never'
 c.url.default_page = 'https://sestolab.pp.ua/startpage'
 c.url.start_pages = c.url.default_page
 c.url.searchengines = {'DEFAULT': c.url.default_page + '?q={}'}
+c.fileselect.handler = 'external'
+c.fileselect.folder.command = ['dfpicker']
+c.fileselect.single_file.command = ['dfpicker']
+c.fileselect.multiple_files.command = ['dfpicker']
 
 config.bind('o', 'spawn --userscript qbdmenu')
 config.bind('O', 'spawn --userscript qbdmenu -t')
