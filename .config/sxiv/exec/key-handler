@@ -11,7 +11,7 @@ do
 		"R")
 			convert -rotate -90 "$file" "$file" ;;
 		"c")
-			xclip -sel clip -t $(file --mime-type -b "$file") "$file" ;;
+			xclip -sel clip -t $(xdg-mime query filetype "$file") "$file" ;;
 		"C")
 			echo -n "$file" | xclip -sel clip ;;
 		"w")
