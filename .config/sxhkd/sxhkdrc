@@ -35,7 +35,7 @@ XF86AudioMute
 
 # brightness control
 XF86MonBrightness{Up,Down}
-	brightnessctl s 10{+,-}
+	brightnesh {+,-}10
 
 # media players controll
 XF86Audio{Prev,Play,Next}
