@@ -1,8 +1,8 @@
 set folder = "imaps://owner@sestolab.pp.ua@imap.sestolab.pp.ua:993"
 set smtp_url = "smtps://owner@sestolab.pp.ua@smtp.sestolab.pp.ua:465"
 
-set smtp_pass = `pass show mutt/owner.sestolab.pp.ua`
-set imap_pass = `pass show mutt/owner.sestolab.pp.ua`
+set smtp_pass = `pash show mutt/owner.sestolab.pp.ua`
+set imap_pass = `pash show mutt/owner.sestolab.pp.ua`
 
 set from = "owner@sestolab.pp.ua"
 set realname = "Sergiy Stupar"
