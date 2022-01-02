@@ -1,6 +1,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export GPG_TTY="$(tty)"
+
 HISTCONTROL=ignoreboth:erasedups
 HISTFILESIZE=1000
 HISTFILESIZE=2000
