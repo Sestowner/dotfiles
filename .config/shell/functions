@@ -47,7 +47,7 @@ cchmod() {
 	wget -qO- "cheat.sh/chmod/$1"
 }
 
-function v() {
+v() {
 	vim $(echo "$@" | sed -e "s/:$//g" -e "s/:/ +/g")
 }
 
@@ -59,7 +59,7 @@ mds() {
 	md2html "$1" | surf "data:text/html;base64,$(base64 -w 0 <&0)"
 }
 
-function mvs() {
+mvs() {
 	local TMPFILE=tmp.$$
 	mv "$1" $TMPFILE && mv "$2" "$1" && mv $TMPFILE "$2"
 }
