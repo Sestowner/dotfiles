@@ -63,6 +63,7 @@ hi SpecialKey ctermfg=darkgray
 hi NonText ctermfg=darkgray
 hi Search ctermfg=black
 hi Todo ctermfg=darkyellow ctermbg=none cterm=bold
+hi Folded ctermfg=gray ctermbg=black
 
 " Automatic commands
 au BufReadPost * call setpos(".", getpos("'\"")) " Remember cursor position
