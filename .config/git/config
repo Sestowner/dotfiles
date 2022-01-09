@@ -5,7 +5,6 @@
 
 [core]
 	editor = vim
-	pager = less -R -x4
 
 [commit]
 	gpgSign = true
