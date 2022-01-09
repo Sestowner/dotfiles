@@ -42,9 +42,9 @@ config.bind('tj', 'config-cycle -tpu {url:host} content.javascript.enabled;; rel
 
 config.bind('xs', 'config-source')
 
-config.bind(',M', 'spawn --detach mpv --force-window yes "{url}"')
-config.bind(',m', 'hint links spawn --detach mpv --force-window "{hint-url}"')
-config.bind(',am', 'hint all spawn --detach mpv --force-window "{hint-url}"')
+config.bind(',M', 'spawn --detach mpvsh --force-window "{url}"')
+config.bind(',m', 'hint links spawn --detach mpvsh --force-window "{hint-url}"')
+config.bind(',am', 'hint all spawn --detach mpvsh --force-window "{hint-url}"')
 config.bind(',i', 'hint images spawn --detach display "{hint-url}"')
 config.bind(',V', 'view-source -e')
 
