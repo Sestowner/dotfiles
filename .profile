@@ -5,5 +5,5 @@ export RCLONE_PASSWORD_COMMAND="pash rclone"
 
 [ "$SHELL" == "/bin/bash" ] && [ -f ~/.bashrc ] && . ~/.bashrc
 
-[ "$(tty)" == "/dev/tty1" ] && exec startx
+[ "$(tty)" == "/dev/tty1" ] && exec ssession
 
