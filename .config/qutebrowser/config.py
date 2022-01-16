@@ -47,6 +47,8 @@ config.bind(',m', 'hint links spawn --detach mpvsh --force-window "{hint-url}"')
 config.bind(',am', 'hint all spawn --detach mpvsh --force-window "{hint-url}"')
 config.bind(',i', 'hint images spawn --detach display "{hint-url}"')
 config.bind(',V', 'view-source -e')
+config.bind(',d', 'hint all download')
+config.bind(',D', 'hint -r all download')
 
 #password autofill
 config.bind('<z><l>', 'spawn --userscript qbpass')
