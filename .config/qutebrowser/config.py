@@ -25,6 +25,7 @@ c.fileselect.handler = 'external'
 c.fileselect.folder.command = ['dfpicker']
 c.fileselect.single_file.command = ['dfpicker']
 c.fileselect.multiple_files.command = ['dfpicker']
+c.editor.command = ['st', '-e', 'vim', '{}']
 
 config.bind('o', 'spawn --userscript qbdmenu')
 config.bind('O', 'spawn --userscript qbdmenu -t')
